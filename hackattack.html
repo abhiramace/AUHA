@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        /* Basic CSS for styling the sign-in page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .signup-link {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .signup-link a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign In</h2>
+        <form action="/submit_form" method="POST"> <!-- Placeholder action -->
+            <label for="username">Username or Email:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username or email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit">Sign In</button>
+        </form>
+
+        <div class="signup-link">
+            <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnFlow - Personalized Learning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: white;
+            margin: 10px auto;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+        }
+        .section img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .section h2 {
+            margin: 0;
+            font-size: 18px;
+            color: #4CAF50;
+        }
+        .nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-around;
+            background-color: #4CAF50;
+            padding: 10px 0;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            text-align: center;
+        }
+        .nav a img {
+            width: 25px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome, Maya!</h1>
+        <p>Your learning journey starts here.</p>
+    </header>
+    <main>
+        <div class="section">
+            <img src="https://i.ibb.co/wcb4Y5S/quiz.jpg" alt="quiz" border="0"></a>
+            <h2>Quizzes</h2>
+            <p>Assess your knowledge and learn at your own pace.</p>
+        </div>
+        <div class="section">
+            <img src="https://i.ibb.co/hmmDwYq/project.jpg" alt="project" border="0"></a>
+            <h2>Projects</h2>
+            <p>Collaborate with peers and build something amazing.</p>
+        </div>
+        <div class="section">
+            <img src="https://i.ibb.co/xzW4Hvb/achive.jpg" alt="achive" border="0"></a>
+            <h2>Achievements</h2>
+            <p>Earn points and badges as you progress.</p>
+        </div>
+        <div class="section">
+            <img src="https://i.ibb.co/2gzYLP2/teachers.jpg" alt="teachers" border="0"></a>
+            <h2>Teacher Feedback</h2>
+            <p>View insights and feedback from your teacher.</p>
+        </div>
+    </main>
+    
+</body>
+</html>
